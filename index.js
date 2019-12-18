@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}))
 //database connection
 mongoose.connect(mongoURI, {useNewUrlParser: true,
 useCreateIndex: true, useUnifiedTopology: true  }, ()=>{
- console.log('Connected to the database');
+ console.log('Connected to to to the database');
 })
 
 mongoose.set('useFindAndModify', false) //used because of deprecation issue
